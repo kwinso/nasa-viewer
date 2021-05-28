@@ -14,7 +14,6 @@ const bot = new Telegraf(process.env.TG_TOKEN as string);
 const toMenuButton = Markup.button.callback("Меню 📜", "menu");
 const greetMarkup = Markup.inlineKeyboard([
     [Markup.button.callback("Роверы ⚙️", "rovers"), Markup.button.callback("APOD 🌌", "apod")],
-    [Markup.button.callback("Погода на Марсе 🌡️", "weather")],
 ]);
 
 // Erros catching
